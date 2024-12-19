@@ -1,0 +1,34 @@
+mail:
+  host: smtp.gmail.com
+  password: upjrvffbfdelypxn
+  port: 587
+  username: academiflow.coditas@gmail.com
+server:
+  port: 9292
+spring:
+  application:
+    name: AcademiFlow
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: coditas
+    url: jdbc:postgresql://localhost:5432/tms
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+  properties:
+  dialect: org.hibernate.dialect.MySQL5Dialect
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 2MB
+      max-request-size: 2MB
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  packages-to-scan: com.example.AcademiFlow.controller
+  show-actuator: true
+  swagger-ui:
+    enable: true
+    path: /swagger-ui.html
